@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Popover from "@material-ui/core/Popover";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import { useSelector } from "react-redux";
 import { SLICE_NAME } from "../redux/FeeSlice";
 
@@ -40,6 +41,7 @@ export default function TotalFee() {
         variant="text"
         color="inherit"
         onClick={handleClick}
+        endIcon={<ArrowDropDownIcon/>}
       >
         Total Fee
       </Button>
